@@ -5,11 +5,12 @@
     <h1>Same Good Films</h1>
 
     <div class="container">
-        <div class="row row-cols-xl-3">
+        <div class="row row-cols-xl-3 g-4">
             @forelse ($movies as $movie)
                 <div class="col">
                     <div class="card text-start">
-                        <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+
+                        <img class="card-img-top" src="https://picsum.photos/200/300" alt="Title">
                         <div class="card-body">
                             <h3 class="card-title">{{ $movie->title }}</h3>
                             <h5 class="card-title">{{ $movie->original_title }}</h5>
